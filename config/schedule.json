@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0",
+  "task_name": "睡前抽卡 · 世界故事与人物名城",
+  "timezone": "Asia/Shanghai",
+  "local_time": "22:00",
+  "frequency": "daily",
+  "utc_cron_reference": "0 14 * * *",
+  "enabled": false,
+  "provider_status": "not_created",
+  "provider": null,
+  "task_id": null,
+  "next_run_at": null,
+  "last_delivery_at": null,
+  "note": "期望配置，尚未部署；不能把此文件当成自动化任务创建凭据。"
+}

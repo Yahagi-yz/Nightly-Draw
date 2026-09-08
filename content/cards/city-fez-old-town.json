@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0",
+  "id": "city-fez-old-town",
+  "title": "非斯：把时间留在街巷里",
+  "category": "historic_city",
+  "content_nature": "historical_summary",
+  "region": "摩洛哥·非斯",
+  "body": "认识非斯，可以先从它的旧城开始。13至14世纪的马林王朝时期，这座城市迎来繁盛。学校、商旅客栈、住宅与喷泉，组成了旧城丰富的建筑面貌。\n\n1912年，摩洛哥的政治首都迁往拉巴特，但非斯仍保有重要的文化与精神地位。读一座古城，也可以不急着背下所有年代，先认识那些把学习、往来与生活连在一起的空间。",
+  "reflection": "编辑收束：今晚先认识一座城，不必一次走完它。",
+  "editorial_note": "根据 UNESCO 简介所写的简短历史概述；没有虚构当晚街景或个人游记。避开将来源中的建城时期表述压成单一年份。",
+  "format": "text",
+  "language": "zh-CN",
+  "sources": [
+    {
+      "title": "Medina of Fez",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/170/",
+      "supports": "马林王朝时期的繁盛；旧城建筑类型；1912年政治首都迁往拉巴特；文化与精神地位。",
+      "reuse_note": "简短中文事实概述；页面说明文本标注 CC-BY-SA IGO 3.0，未复用页面图片；正式发布前继续核对适用许可。",
+      "accessed_on": "2026-09-08"
+    }
+  ],
+  "images": [],
+  "review_status": "source_checked",
+  "release_status": "sample_only",
+  "related_tags": [
+    "城市",
+    "街巷",
+    "文化"
+  ]
+}

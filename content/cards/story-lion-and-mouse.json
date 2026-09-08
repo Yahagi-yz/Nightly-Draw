@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "id": "story-lion-and-mouse",
+  "title": "狮子身边的小小帮手",
+  "category": "world_story",
+  "content_nature": "fable_retelling",
+  "region": "伊索寓言传统",
+  "body": "一只小老鼠惊醒了睡着的狮子。狮子抓住它，老鼠请求被放走，还说将来会报答。狮子觉得这承诺有些可笑，却仍放开了爪子。\n\n后来，狮子被猎人的网困住。小老鼠听见它的吼声，赶来咬断绳索。先前看起来毫不起眼的牙齿，做到了狮子的力气也没能做到的事。",
+  "reflection": "编辑收束：有些帮助很小，却恰好能解开那一个结。",
+  "editorial_note": "寓言情节的简短中文转述，不是自然观察或历史记载；结尾为编辑文字。结构样卡，长度不代表生产卡的最终规格。",
+  "format": "text",
+  "language": "zh-CN",
+  "sources": [
+    {
+      "title": "The Lion & the Mouse",
+      "publisher": "Library of Congress",
+      "url": "https://read.gov/aesop/007.html",
+      "supports": "狮子放走老鼠；狮子被猎网困住；老鼠咬断绳索相救。",
+      "reuse_note": "简短中文转述；未复用页面插图或现代中文译文。",
+      "accessed_on": "2026-09-08"
+    }
+  ],
+  "images": [],
+  "review_status": "source_checked",
+  "release_status": "sample_only",
+  "related_tags": [
+    "善意",
+    "小小的帮助"
+  ]
+}

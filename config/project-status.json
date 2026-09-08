@@ -1,0 +1,21 @@
+{
+  "recorded_on": "2026-09-09",
+  "recorded_timezone": "Asia/Shanghai",
+  "artifact_status": "repository_foundation",
+  "repository": "Yahagi-yz/Nightly-Draw",
+  "remote_repository_created": true,
+  "remote_repository_url": "https://github.com/Yahagi-yz/Nightly-Draw",
+  "repository_visibility_observed": "public",
+  "default_branch": "main",
+  "remote_issue_created": true,
+  "remote_issue_url": "https://github.com/Yahagi-yz/Nightly-Draw/issues/1",
+  "scheduled_task_created": false,
+  "push_verified": false,
+  "app_deployed": false,
+  "local_checks": {
+    "unit_tests_passed": 13,
+    "sample_cards_validated": 3,
+    "browser_interactions_passed": true
+  },
+  "note": "仓库与Issue已由实际工具核实；自动推送未创建。校验结果只证明初始化基础，不证明部署、正式内容审核或发送。"
+}

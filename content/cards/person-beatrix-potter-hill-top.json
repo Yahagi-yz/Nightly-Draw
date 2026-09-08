@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0",
+  "id": "person-beatrix-potter-hill-top",
+  "title": "她把故事的稿酬，换成了一座农场",
+  "category": "person_story",
+  "content_nature": "historical_summary",
+  "region": "英国·湖区",
+  "body": "1905年，彼得兔的创作者比阿特丽克斯·波特用书籍收益买下了湖区的 Hill Top 农场。农舍、花园和周边乡村，后来进入她笔下的故事。\n\n创作之外，她也把精力交给土地。1943年去世后，她留下的大片乡野由英国 National Trust 接手保护。她留给后来人的，不只有纸上的小动物，还有故事扎根的地方。",
+  "reflection": "编辑收束：有时候，爱一个想象中的世界，也会让人更愿意照料真实的世界。",
+  "editorial_note": "依据 National Trust 的简短人物经历介绍；没有虚构对话或心理活动，末句收束属于编辑表达。未使用存在页面表述差异的农场数量。",
+  "format": "text",
+  "language": "zh-CN",
+  "sources": [
+    {
+      "title": "The stories behind the works of Beatrix Potter",
+      "publisher": "National Trust",
+      "url": "https://www.nationaltrust.org.uk/discover/history/art-collections/the-stories-behind-the-works-of-beatrix-potter",
+      "supports": "1905年用书籍收益购买 Hill Top；农场及周边成为创作背景；1943年去世后留下土地。",
+      "reuse_note": "事实的简短中文概述，不复用网站摄影、插图或长段原文。",
+      "accessed_on": "2026-09-08"
+    }
+  ],
+  "images": [],
+  "review_status": "source_checked",
+  "release_status": "sample_only",
+  "related_tags": [
+    "乡野",
+    "创作",
+    "守护"
+  ]
+}

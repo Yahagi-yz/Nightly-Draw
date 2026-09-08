@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Draw Card v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "category",
+    "content_nature",
+    "format",
+    "region",
+    "language",
+    "body",
+    "reflection",
+    "editorial_note",
+    "sources",
+    "images",
+    "review_status",
+    "release_status",
+    "related_tags"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "enum": [
+        "world_story",
+        "person_story",
+        "historic_city"
+      ]
+    },
+    "content_nature": {
+      "enum": [
+        "fable_retelling",
+        "legend_retelling",
+        "literary_adaptation",
+        "historical_summary",
+        "original_fiction"
+      ]
+    },
+    "format": {
+      "enum": [
+        "text",
+        "image",
+        "mixed"
+      ]
+    },
+    "region": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "const": "zh-CN"
+    },
+    "body": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reflection": {
+      "type": "string"
+    },
+    "editorial_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "publisher",
+          "url",
+          "accessed_on",
+          "supports",
+          "reuse_note"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "accessed_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "supports": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reuse_note": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "images": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "alt",
+          "kind",
+          "source_url",
+          "creator",
+          "rights_status",
+          "rights_note"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "photograph",
+              "artwork",
+              "generated_illustration"
+            ]
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "creator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_status": {
+            "enum": [
+              "verified",
+              "pending"
+            ]
+          },
+          "rights_note": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "review_status": {
+      "enum": [
+        "draft",
+        "source_checked",
+        "editor_approved"
+      ]
+    },
+    "release_status": {
+      "enum": [
+        "sample_only",
+        "unpublished",
+        "published"
+      ]
+    },
+    "related_tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "content_nature": {
+            "not": {
+              "const": "original_fiction"
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sources": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "format": {
+            "enum": [
+              "image",
+              "mixed"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "images": {
+            "minItems": 1,
+            "items": {
+              "properties": {
+                "rights_status": {
+                  "const": "verified"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "release_status": {
+            "const": "published"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "review_status": {
+            "const": "editor_approved"
+          },
+          "images": {
+            "items": {
+              "properties": {
+                "rights_status": {
+                  "const": "verified"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
